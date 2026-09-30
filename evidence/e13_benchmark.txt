@@ -1,0 +1,82 @@
+=== small (808K) ===
+  fp16        CPU_ONLY     median   0.277 ms (mean 0.282 +/- 0.019)     1.60 MB
+  fp16        CPU_AND_GPU  median   1.207 ms (mean 1.374 +/- 0.447)     1.60 MB
+  fp16        ALL          median   1.125 ms (mean 1.275 +/- 0.294)     1.60 MB
+  int8        CPU_ONLY     median   0.256 ms (mean 0.258 +/- 0.004)     0.85 MB
+  int8        CPU_AND_GPU  median   1.410 ms (mean 1.450 +/- 0.111)     0.85 MB
+  int8        ALL          median   1.967 ms (mean 2.202 +/- 0.569)     0.85 MB
+  int4        CPU_ONLY     median   0.256 ms (mean 0.260 +/- 0.015)     0.46 MB
+  int4        CPU_AND_GPU  median   1.447 ms (mean 1.613 +/- 0.609)     0.46 MB
+  int4        ALL          median   1.708 ms (mean 1.598 +/- 0.390)     0.46 MB
+  palett4     CPU_ONLY     median   0.285 ms (mean 0.285 +/- 0.006)     0.45 MB
+  palett4     CPU_AND_GPU  median   1.851 ms (mean 1.755 +/- 0.256)     0.45 MB
+  palett4     ALL          median   1.372 ms (mean 1.678 +/- 0.533)     0.45 MB
+  int8-wo     CPU_ONLY     median   0.257 ms (mean 0.261 +/- 0.015)     0.86 MB
+  int8-wo     CPU_AND_GPU  median   1.573 ms (mean 1.700 +/- 0.472)     0.86 MB
+  int8-wo     ALL          median   1.549 ms (mean 1.637 +/- 0.215)     0.86 MB
+  int4-wo     CPU_ONLY     median   0.257 ms (mean 0.265 +/- 0.020)     0.51 MB
+  int4-wo     CPU_AND_GPU  median   1.399 ms (mean 1.485 +/- 0.298)     0.51 MB
+  int4-wo     ALL          median   1.444 ms (mean 1.638 +/- 0.558)     0.51 MB
+  palett4-wo  CPU_ONLY     median   0.259 ms (mean 0.260 +/- 0.004)     0.50 MB
+  palett4-wo  CPU_AND_GPU  median   1.300 ms (mean 1.584 +/- 0.626)     0.50 MB
+  palett4-wo  ALL          median   1.629 ms (mean 1.614 +/- 0.397)     0.50 MB
+=== large (19M) ===
+  fp16        CPU_ONLY     median   2.410 ms (mean 2.464 +/- 0.164)    36.28 MB
+  fp16        CPU_AND_GPU  median   5.110 ms (mean 5.270 +/- 1.838)    36.28 MB
+  fp16        ALL          median   2.928 ms (mean 2.951 +/- 0.491)    36.28 MB
+  int8        CPU_ONLY     median   2.311 ms (mean 2.352 +/- 0.124)    18.25 MB
+  int8        CPU_AND_GPU  median   7.233 ms (mean 7.348 +/- 1.264)    18.25 MB
+  int8        ALL          median   4.538 ms (mean 4.425 +/- 0.616)    18.25 MB
+  int4        CPU_ONLY     median   2.261 ms (mean 2.279 +/- 0.064)     9.20 MB
+  int4        CPU_AND_GPU  median   5.249 ms (mean 5.267 +/- 1.886)     9.20 MB
+  int4        ALL          median   3.364 ms (mean 4.172 +/- 1.691)     9.20 MB
+  palett4     CPU_ONLY     median   2.407 ms (mean 2.436 +/- 0.092)     9.15 MB
+  palett4     CPU_AND_GPU  median   5.807 ms (mean 6.159 +/- 1.878)     9.15 MB
+  palett4     ALL          median   5.394 ms (mean 6.074 +/- 2.378)     9.15 MB
+  int8-wo     CPU_ONLY     median   2.359 ms (mean 2.391 +/- 0.117)    18.28 MB
+  int8-wo     CPU_AND_GPU  median   6.646 ms (mean 7.139 +/- 1.509)    18.28 MB
+  int8-wo     ALL          median   3.958 ms (mean 3.908 +/- 0.786)    18.28 MB
+  int4-wo     CPU_ONLY     median   2.270 ms (mean 2.286 +/- 0.057)    10.32 MB
+  int4-wo     CPU_AND_GPU  median   2.918 ms (mean 2.984 +/- 0.222)    10.32 MB
+  int4-wo     ALL          median   2.739 ms (mean 3.511 +/- 1.713)    10.32 MB
+  palett4-wo  CPU_ONLY     median   2.244 ms (mean 2.267 +/- 0.073)     9.34 MB
+  palett4-wo  CPU_AND_GPU  median   3.624 ms (mean 3.619 +/- 0.365)     9.34 MB
+  palett4-wo  ALL          median   5.929 ms (mean 6.198 +/- 1.666)     9.34 MB
+=== OpenELM-270M ===
+  fp16        CPU_ONLY     median  32.719 ms (mean 33.918 +/- 4.087)   518.47 MB
+  fp16        CPU_AND_GPU  median  35.408 ms (mean 36.628 +/- 6.173)   518.47 MB
+  fp16        ALL          median  10.938 ms (mean 11.071 +/- 0.408)   518.47 MB
+  int8        CPU_ONLY     median  30.907 ms (mean 31.054 +/- 0.540)   259.93 MB
+  int8        CPU_AND_GPU  median  39.477 ms (mean 40.703 +/- 4.580)   259.93 MB
+  int8        ALL          median  10.907 ms (mean 10.910 +/- 0.126)   259.93 MB
+  int4        CPU_ONLY     median  32.461 ms (mean 32.419 +/- 1.755)   130.48 MB
+  int4        CPU_AND_GPU  median  30.812 ms (mean 31.411 +/- 14.034)   130.48 MB
+  int4        ALL          median  23.769 ms (mean 24.084 +/- 1.977)   130.48 MB
+  palett4     CPU_ONLY     median  30.696 ms (mean 30.919 +/- 0.607)   130.11 MB
+  palett4     CPU_AND_GPU  median  43.700 ms (mean 40.200 +/- 9.228)   130.11 MB
+  palett4     ALL          median   9.424 ms (mean 9.430 +/- 0.522)   130.11 MB
+  int8-wo     CPU_ONLY     median  30.422 ms (mean 30.455 +/- 0.200)   259.94 MB
+  int8-wo     CPU_AND_GPU  median  37.703 ms (mean 37.527 +/- 1.188)   259.94 MB
+  int8-wo     ALL          median  10.932 ms (mean 10.943 +/- 0.087)   259.94 MB
+  int4-wo     CPU_ONLY     median  30.521 ms (mean 30.614 +/- 0.376)   146.31 MB
+  int4-wo     CPU_AND_GPU  median  30.784 ms (mean 31.786 +/- 5.572)   146.31 MB
+  int4-wo     ALL          median  31.131 ms (mean 32.075 +/- 5.188)   146.31 MB
+  palett4-wo  CPU_ONLY     median  30.975 ms (mean 31.568 +/- 2.532)   130.49 MB
+  palett4-wo  CPU_AND_GPU  median  47.993 ms (mean 46.867 +/- 14.110)   130.49 MB
+  palett4-wo  ALL          median   8.909 ms (mean 9.158 +/- 0.478)   130.49 MB
+=== OpenELM-270M fixed ===
+  fp16        CPU_ONLY     median  30.207 ms (mean 30.178 +/- 0.303)   518.49 MB
+  fp16        CPU_AND_GPU  median  34.953 ms (mean 35.935 +/- 4.068)   518.49 MB
+  fp16        ALL          median  11.252 ms (mean 11.643 +/- 0.748)   518.49 MB
+  int8-wo     CPU_ONLY     median  29.912 ms (mean 29.972 +/- 0.170)   259.96 MB
+  int8-wo     CPU_AND_GPU  median  39.506 ms (mean 39.561 +/- 1.164)   259.96 MB
+  int8-wo     ALL          median  10.614 ms (mean 10.679 +/- 0.192)   259.96 MB
+  int4-wo     CPU_ONLY     median  31.346 ms (mean 31.413 +/- 0.415)   146.33 MB
+  int4-wo     CPU_AND_GPU  median  33.600 ms (mean 32.628 +/- 10.835)   146.33 MB
+  int4-wo     ALL          median  32.129 ms (mean 33.045 +/- 6.597)   146.33 MB
+  palett4-wo  CPU_ONLY     median  30.423 ms (mean 30.429 +/- 0.259)   130.51 MB
+  palett4-wo  CPU_AND_GPU  median  45.092 ms (mean 45.148 +/- 2.003)   130.51 MB
+  palett4-wo  ALL          median   9.014 ms (mean 9.210 +/- 0.452)   130.51 MB
+saved results.csv
+saved benchmark_plot.png
+saved memory_plot.png

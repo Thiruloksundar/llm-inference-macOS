@@ -1,0 +1,44 @@
+Getting Core ML weights meta data:   0%|          | 0/32 [00:00<?, ? ops/s]Getting Core ML weights meta data: 100%|██████████| 32/32 [00:00<00:00, 1635.56 ops/s]
+=== shakespeare_transformer.mlpackage: 32 constants > 512 elements ===
+  NON-WEIGHT pos_enc_to_fp16                               shape=(64, 128) feeds=['add'] min=-1 max=1 unique=3691 non_finite=0
+  NON-WEIGHT op_66                                         shape=(1, 1, 64, 64) feeds=['select'] min=0 max=1 unique=2 non_finite=0
+  -> 30 learned-weight constants, 2 non-weight constants also eligible for compression
+Getting Core ML weights meta data:   0%|          | 0/121 [00:00<?, ? ops/s]Getting Core ML weights meta data:   1%|          | 1/121 [00:00<01:35,  1.26 ops/s]Getting Core ML weights meta data:  11%|█         | 13/121 [00:00<00:05, 19.07 ops/s]Getting Core ML weights meta data:  17%|█▋        | 20/121 [00:01<00:03, 26.78 ops/s]Getting Core ML weights meta data:  22%|██▏       | 27/121 [00:01<00:02, 32.29 ops/s]Getting Core ML weights meta data:  27%|██▋       | 33/121 [00:01<00:02, 36.06 ops/s]Getting Core ML weights meta data:  32%|███▏      | 39/121 [00:01<00:02, 35.51 ops/s]Getting Core ML weights meta data:  36%|███▋      | 44/121 [00:01<00:02, 37.67 ops/s]Getting Core ML weights meta data:  40%|████      | 49/121 [00:01<00:01, 36.25 ops/s]Getting Core ML weights meta data:  45%|████▍     | 54/121 [00:01<00:02, 32.63 ops/s]Getting Core ML weights meta data:  48%|████▊     | 58/121 [00:02<00:01, 32.27 ops/s]Getting Core ML weights meta data:  51%|█████     | 62/121 [00:02<00:02, 27.39 ops/s]Getting Core ML weights meta data:  55%|█████▌    | 67/121 [00:02<00:02, 25.72 ops/s]Getting Core ML weights meta data:  59%|█████▊    | 71/121 [00:02<00:01, 27.65 ops/s]Getting Core ML weights meta data:  62%|██████▏   | 75/121 [00:02<00:01, 25.33 ops/s]Getting Core ML weights meta data:  64%|██████▍   | 78/121 [00:02<00:01, 25.22 ops/s]Getting Core ML weights meta data:  67%|██████▋   | 81/121 [00:03<00:01, 21.39 ops/s]Getting Core ML weights meta data:  70%|███████   | 85/121 [00:03<00:01, 23.68 ops/s]Getting Core ML weights meta data:  73%|███████▎  | 88/121 [00:03<00:01, 19.98 ops/s]Getting Core ML weights meta data:  76%|███████▌  | 92/121 [00:03<00:01, 21.95 ops/s]Getting Core ML weights meta data:  79%|███████▉  | 96/121 [00:03<00:01, 19.75 ops/s]Getting Core ML weights meta data:  82%|████████▏ | 99/121 [00:03<00:01, 21.37 ops/s]Getting Core ML weights meta data:  85%|████████▌ | 103/121 [00:04<00:01, 17.55 ops/s]Getting Core ML weights meta data:  88%|████████▊ | 106/121 [00:04<00:00, 19.13 ops/s]Getting Core ML weights meta data:  91%|█████████ | 110/121 [00:04<00:00, 16.45 ops/s]Getting Core ML weights meta data:  93%|█████████▎| 112/121 [00:04<00:00, 16.52 ops/s]Getting Core ML weights meta data:  97%|█████████▋| 117/121 [00:05<00:00, 16.00 ops/s]Getting Core ML weights meta data:  98%|█████████▊| 119/121 [00:05<00:00, 15.98 ops/s]Getting Core ML weights meta data: 100%|██████████| 121/121 [00:05<00:00, 22.91 ops/s]
+=== openelm_270m.mlpackage: 121 constants > 512 elements ===
+  NON-WEIGHT model_transformer_layers_0_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.1 max=0.457 unique=593 non_finite=0
+  NON-WEIGHT op_148_to_fp16                                shape=(1, 1, 64, 64) feeds=['mul'] min=-1 max=1 unique=804 non_finite=0
+  NON-WEIGHT op_146_to_fp16                                shape=(1, 1, 64, 64) feeds=['mul'] min=-1 max=1 unique=1458 non_finite=0
+  NON-WEIGHT causal_mask_3_to_fp16                         shape=(1, 1, 64, 64) feeds=['scaled_dot_product_attention'] min=-inf max=-0 unique=2 non_finite=2016
+  NON-WEIGHT model_transformer_layers_0_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.000701 max=1.7 unique=627 non_finite=0
+  NON-WEIGHT model_transformer_layers_1_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-1.29 max=1.22 unique=1080 non_finite=0
+  NON-WEIGHT model_transformer_layers_1_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.109 max=1.26 unique=872 non_finite=0
+  NON-WEIGHT model_transformer_layers_2_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.0292 max=1.02 unique=863 non_finite=0
+  NON-WEIGHT model_transformer_layers_2_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.203 max=0.81 unique=726 non_finite=0
+  NON-WEIGHT model_transformer_layers_3_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.0842 max=0.576 unique=760 non_finite=0
+  NON-WEIGHT model_transformer_layers_3_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.00136 max=0.48 unique=551 non_finite=0
+  NON-WEIGHT model_transformer_layers_4_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.0624 max=0.9 unique=656 non_finite=0
+  NON-WEIGHT model_transformer_layers_4_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.133 max=0.562 unique=536 non_finite=0
+  NON-WEIGHT model_transformer_layers_5_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.000232 max=1.03 unique=663 non_finite=0
+  NON-WEIGHT model_transformer_layers_5_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.166 max=0.601 unique=571 non_finite=0
+  NON-WEIGHT model_transformer_layers_6_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-1.91e-06 max=1.08 unique=774 non_finite=0
+  NON-WEIGHT model_transformer_layers_6_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.000497 max=0.791 unique=693 non_finite=0
+  NON-WEIGHT model_transformer_layers_7_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-4.39e-05 max=1.14 unique=903 non_finite=0
+  NON-WEIGHT model_transformer_layers_7_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.000125 max=0.87 unique=773 non_finite=0
+  NON-WEIGHT model_transformer_layers_8_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.0645 max=1.23 unique=897 non_finite=0
+  NON-WEIGHT model_transformer_layers_8_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.000391 max=0.806 unique=768 non_finite=0
+  NON-WEIGHT model_transformer_layers_9_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-5.89e-05 max=2.12 unique=938 non_finite=0
+  NON-WEIGHT model_transformer_layers_9_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=4.26e-05 max=0.772 unique=719 non_finite=0
+  NON-WEIGHT model_transformer_layers_10_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.000352 max=1.96 unique=865 non_finite=0
+  NON-WEIGHT model_transformer_layers_10_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.000218 max=0.779 unique=558 non_finite=0
+  NON-WEIGHT model_transformer_layers_11_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.000803 max=3.82 unique=809 non_finite=0
+  NON-WEIGHT model_transformer_layers_11_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.00156 max=0.944 unique=408 non_finite=0
+  NON-WEIGHT model_transformer_layers_12_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.311 max=5.08 unique=640 non_finite=0
+  NON-WEIGHT model_transformer_layers_12_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=3.08e-05 max=1.25 unique=356 non_finite=0
+  NON-WEIGHT model_transformer_layers_13_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.000188 max=12 unique=885 non_finite=0
+  NON-WEIGHT model_transformer_layers_13_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.000392 max=1.51 unique=359 non_finite=0
+  NON-WEIGHT model_transformer_layers_14_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.497 max=15.6 unique=830 non_finite=0
+  NON-WEIGHT model_transformer_layers_14_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=-0.000154 max=1.58 unique=355 non_finite=0
+  NON-WEIGHT model_transformer_layers_15_attn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=1.3 max=22.2 unique=782 non_finite=0
+  NON-WEIGHT model_transformer_layers_15_ffn_norm_weight_to_fp16 shape=(1280,) feeds=['mul'] min=0.000624 max=2.94 unique=308 non_finite=0
+  NON-WEIGHT model_transformer_norm_weight_to_fp16         shape=(1280,) feeds=['mul'] min=-0.00782 max=14.1 unique=446 non_finite=0
+  -> 85 learned-weight constants, 36 non-weight constants also eligible for compression

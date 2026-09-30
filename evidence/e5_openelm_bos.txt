@@ -1,0 +1,2 @@
+without BOS  ppl=   28615.9   median top1-top2 logit gap=2.069   positions with gap<0.05: 0.9%   (32 windows x 64 tokens)
+with BOS     ppl=      48.7   median top1-top2 logit gap=0.751   positions with gap<0.05: 5.0%   (32 windows x 64 tokens)

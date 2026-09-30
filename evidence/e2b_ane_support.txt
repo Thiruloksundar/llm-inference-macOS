@@ -1,0 +1,5 @@
+shakespeare_transformer.mlpackage: 7/107 executed ops NOT supported on ANE -> {'cast': 3, 'greater_equal': 1, 'add': 1, 'select': 1, 'gather': 1}
+shakespeare_transformer_sdpa.mlpackage: 7/91 executed ops NOT supported on ANE -> {'cast': 3, 'greater_equal': 1, 'add': 1, 'select': 1, 'gather': 1}
+large_transformer.mlpackage: 7/155 executed ops NOT supported on ANE -> {'cast': 3, 'greater_equal': 1, 'add': 1, 'select': 1, 'gather': 1}
+openelm_270m.mlpackage: 7/1022 executed ops NOT supported on ANE -> {'cast': 3, 'greater_equal': 1, 'add': 1, 'select': 1, 'gather': 1}
+openelm_270m_int4.mlpackage: 11/1026 executed ops NOT supported on ANE -> {'cast': 4, 'greater_equal': 2, 'add': 2, 'select': 2, 'gather': 1}

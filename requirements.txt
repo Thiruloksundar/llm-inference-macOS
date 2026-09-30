@@ -1,0 +1,9 @@
+# Pinned to the versions the results were produced with (evidence/environment.txt).
+# torch 2.7.0: newest version coremltools 9.0 is tested against.
+# transformers 4.46.0: OpenELM's remote code breaks on newer versions.
+torch==2.7.0
+coremltools==9.0
+transformers==4.46.0
+numpy
+matplotlib
+scikit-learn  # needed by coremltools' k-means palettization

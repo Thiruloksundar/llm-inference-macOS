@@ -1,0 +1,6 @@
+[iOS17] manual total_ops=  10 max_diff_vs_torch=0.0040  ops={'const': 6, 'matmul': 2, 'mul': 1, 'softmax': 1}
+[iOS17] flash  total_ops= 128 max_diff_vs_torch=0.0037  ops={'const': 63, 'slice_by_index': 8, 'matmul': 8, 'mul': 12, 'reduce_max': 4, 'maximum': 4, 'sub': 8, 'exp': 8, 'reduce_sum': 4, 'add': 8, 'real_div': 1}
+[iOS17] sdpa   total_ops=  10 max_diff_vs_torch=0.0032  ops={'const': 6, 'mul': 1, 'matmul': 2, 'softmax': 1}
+[iOS18] manual total_ops=  10 max_diff_vs_torch=0.0040  ops={'const': 6, 'matmul': 2, 'mul': 1, 'softmax': 1}
+[iOS18] flash  total_ops= 128 max_diff_vs_torch=0.0037  ops={'const': 63, 'slice_by_index': 8, 'matmul': 8, 'mul': 12, 'reduce_max': 4, 'maximum': 4, 'sub': 8, 'exp': 8, 'reduce_sum': 4, 'add': 8, 'real_div': 1}
+[iOS18] sdpa   total_ops=   1 max_diff_vs_torch=0.0006  ops={'scaled_dot_product_attention': 1}

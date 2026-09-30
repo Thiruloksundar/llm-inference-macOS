@@ -1,0 +1,32 @@
+`loss_type=None` was set in the config but it is unrecognised.Using the default loss: `ForCausalLMLoss`.
+Tuple detected at graph output. This will be flattened in the converted model.
+18 outputs: h00 = embeddings, h01..h16 = after each layer (h16 is after the final norm in OpenELM's implementation), logits
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+Saving value type of int64 into a builtin type of int32, might lose precision!
+  return input_var.val.astype(dtype=string_to_nptype(dtype_val))
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+output  | CPU rel.err pos0   pos1.. | ALL rel.err pos0   pos1.. | ALL max|x| pos0 fp32 max|x| pos0
+h00     |           0.0002   0.0002 |           0.0002   0.0002 |             0.9              0.9
+h01     |           0.0026   0.0053 |           1.0548   0.5561 |             0.9              3.2
+h02     |           0.0028   0.0045 |           0.9990   1.2246 |             7.1           3796.7
+h03     |           0.0029   0.0044 |           0.9986   1.3371 |            11.1           3796.9
+h04     |           0.0029   0.0048 |           0.9988   1.2170 |             9.3           3797.2
+h05     |           0.0030   0.0049 |           0.9988   1.2224 |            10.9           3797.6
+h06     |           0.0031   0.0054 |           0.9983   1.1186 |            10.7           3797.6
+h07     |           0.0030   0.0059 |           0.9982   1.1042 |            10.2           3797.6
+h08     |           0.0027   0.0063 |           0.9988   1.2911 |            12.5           3796.4
+h09     |           0.0025   0.0067 |           0.9988   1.3383 |            15.0           3795.5
+h10     |           0.0024   0.0062 |           0.9997   1.3453 |            17.6           3795.0
+h11     |           0.0025   0.0063 |           1.0006   1.3189 |            22.0           3795.4
+h12     |           0.0020   0.0064 |           1.0018   1.2362 |            53.3           3797.7
+h13     |           0.0018   0.0060 |           1.0017   1.1034 |            61.2           3801.0
+h14     |           0.0017   0.0057 |           1.0034   0.9642 |           168.5           3802.6
+h15     |           0.0015   0.0053 |           1.0044   0.8447 |           293.2           3803.5
+h16     |           0.0087   0.0070 |           1.9127   1.6020 |            59.7             39.1
+logits  |           0.0065   0.0056 |           3.0755   1.6387 |            38.6             13.5
+CPU_ONLY: final top-1 agreement with fp32 = 1.000
+ALL: final top-1 agreement with fp32 = 0.062
+ANE model load has failed for on-device compiled macho. Must re-compile the E5 bundle. @ GetANEFModel

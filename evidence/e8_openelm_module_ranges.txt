@@ -1,0 +1,14 @@
+0 module outputs exceed fp16 max (65504):
+largest 12 module outputs overall:
+  transformer.layers.15                         max|out|=     10870.1  at token position 0
+  transformer.layers.15.ffn.proj_2              max|out|=     10753.9  at token position 0
+  transformer.layers.15.ffn                     max|out|=     10753.9  at token position 0
+  transformer.layers.14                         max|out|=      3803.5  at token position 0
+  transformer.layers.13                         max|out|=      3802.6  at token position 0
+  transformer.layers.12                         max|out|=      3801.0  at token position 0
+  transformer.layers.11                         max|out|=      3797.7  at token position 0
+  transformer.layers.5                          max|out|=      3797.6  at token position 0
+  transformer.layers.6                          max|out|=      3797.6  at token position 0
+  transformer.layers.4                          max|out|=      3797.6  at token position 0
+  transformer.layers.3                          max|out|=      3797.2  at token position 0
+  transformer.layers.2                          max|out|=      3796.9  at token position 0

@@ -1,0 +1,6 @@
+OpenELM-270M params: 271,527,168
+patched vs original PyTorch max diff: 3.24e-05
+trace vs eager max diff: 0.00e+00
+saved openelm_270m_safenorm.mlpackage
+CPU_ONLY vs PyTorch: max diff 0.232, top-1 agreement 1.000, NaN False
+ALL      vs PyTorch: max diff 33.098, top-1 agreement 0.000, NaN False
