@@ -1,8 +1,0 @@
-chip: Apple M4
-macOS: 26.6.2
-memory_GB: 16
-python: 3.13.7
-torch: 2.7.0
-coremltools: 9.0
-transformers: 4.46.0
-numpy: 2.5.3

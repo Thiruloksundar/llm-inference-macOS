@@ -1,5 +1,0 @@
-median latency over 50 runs after 10 warmup (ms)
-attention       CPU_ONLY   CPU_AND_GPU           ALL
-naive              0.271         1.615         1.090
-flash              0.523         1.913         2.383
-sdpa               0.617         1.270         1.209

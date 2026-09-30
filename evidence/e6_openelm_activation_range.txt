@@ -1,3 +1,0 @@
-found 65 RMSNorm modules
-without BOS  max |RMSNorm input| =     853.4 (x^2 = 7.28e+05) at token position 32 in transformer.norm; 4/65 RMSNorms see x^2 > fp16 max (65504)
-with BOS     max |RMSNorm input| =   10870.1 (x^2 = 1.18e+08) at token position 0 in transformer.norm; 29/65 RMSNorms see x^2 > fp16 max (65504)

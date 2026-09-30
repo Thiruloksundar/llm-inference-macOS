@@ -1,0 +1,19 @@
+model,variant,perplexity,top1_agreement
+small,fp32 PyTorch,6.23,1.0
+small,naive,6.23,0.999
+small,flash,6.231,0.999
+small,int8,6.231,0.992
+small,int4,6.5,0.881
+small,palett4,6.334,0.903
+medium,fp32 PyTorch,5.162,1.0
+medium,naive,5.162,0.998
+medium,flash,5.162,0.997
+medium,int8,5.161,0.996
+medium,int4,5.165,0.948
+medium,palett4,5.185,0.953
+openelm,fp32 PyTorch,48.989,1.0
+openelm,naive,48.985,0.987
+openelm,flash,21179.007,0.019
+openelm,int8,49.026,0.965
+openelm,int4,53.537,0.835
+openelm,palett4,57.127,0.763

@@ -1,16 +1,9 @@
-# converted Core ML models (hundreds of MB each) - rebuild with the convert_*.py scripts
-*.mlpackage/
-*.mlmodelc/
-
-# trained weights and data - rebuild with train.py / download (see README)
+# converted Core ML models (up to ~500 MB each) - rebuild with convert.py / compress.py
+models/
+# trained weights and dataset - rebuild with train.py / download (see README)
 *.pt
 tinyshakespeare.txt
 
-# python
 __pycache__/
-*.pyc
 .venv/
-venv/
-
-# macOS
 .DS_Store
